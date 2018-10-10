@@ -2,7 +2,7 @@
 let Enemy = function(x,y,speed) {
   this.x=x;
   this.y=y;
-  this.speed=spped;
+  this.speed=speed;
   this.height=40;
   this.width=60;
   this.sprite = 'images/enemy-bug.png';
@@ -19,11 +19,11 @@ Enemy.prototype.update = function(dt) {
     // all computers.
 };
 
-// Draw the enemy on the screen, required method for game
+// Drawing  the enemy on the screen, required method for game
 Enemy.prototype.render = function(x,y) {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-
+//Player class
 let Player=function(x,y){
   this.x=x;
   this.y=y;
@@ -132,7 +132,7 @@ Player.prototype.reset=function(){
   this.x=200;
   this.y=450;
 }
-
+//Instantiating objects
 var allEnemies = [
     new Enemy(-200, 65, 50),
     new Enemy(-200, 65, 85),
@@ -143,18 +143,6 @@ var allEnemies = [
 ];
 
 var player = new Player(200, 450);
-
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
-
-
-// Now instantiate your objects.
-// Place all enemy objects in an array called allEnemies
-// Place the player object in a variable called player
-
-
-
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {

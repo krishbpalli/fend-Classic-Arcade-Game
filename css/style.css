@@ -1,14 +1,20 @@
 body {
     text-align: center;
-    background-color: black;
-    color: cyan;
+    background-color: gray;
+    color: magenta;
 }
 
 body h6 {
-    padding: 5em;
-    font-size: 2em;
+    padding: 1em;
+    font-size: 4em;
+}
+body h1{
+  font-size:4em;
 }
 
+body h3{
+  font-size:2em;
+}
 button {
     font-size: 2em;
     border: .05em solid cyan;
@@ -20,6 +26,6 @@ button {
 button:hover {
     border: .05em solid white;
     border-radius: .5em;
-    background-color: black;
+    background-color:purple ;
     color: white;
 }
