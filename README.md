@@ -16,4 +16,7 @@
     4.Once the player scores 3 points he wins the game.
     5.If the player doesn't score 3 points before losing his 5 lives he lost the game.
     6.The player can play again.
-        
+
+## How to run the project
+  1.Simply open index.html file in your favorite browser and move the player to the water avoiding collision with the bugs!
+  2.If you want to play it locally on your computer, you can either download the files from this repository or clone them.
